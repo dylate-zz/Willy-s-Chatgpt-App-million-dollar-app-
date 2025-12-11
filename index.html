@@ -56,13 +56,114 @@
 <body>
     <div class="container">
         <div class="header">
-            <svg class="logo" viewBox="0 0 41 41"><path d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707Z" fill="currentColor"/></svg>
+            <svg class="logo" viewBox="0 0 200 200">
+                <!-- Left ear -->
+                <path d="M 60 70 Q 45 45 55 35 Q 65 25 75 40 Z" fill="white" stroke="#ddd" stroke-width="2"/>
+                <path d="M 60 70 Q 50 50 57 42 Q 64 34 72 45 Z" fill="#ffb6c1"/>
+                
+                <!-- Right ear -->
+                <path d="M 140 70 Q 155 45 145 35 Q 135 25 125 40 Z" fill="white" stroke="#ddd" stroke-width="2"/>
+                <path d="M 140 70 Q 150 50 143 42 Q 136 34 128 45 Z" fill="#ffb6c1"/>
+                
+                <!-- Head -->
+                <ellipse cx="100" cy="100" rx="50" ry="55" fill="white" stroke="#ddd" stroke-width="2"/>
+                
+                <!-- Bow on head -->
+                <ellipse cx="75" cy="50" rx="15" ry="12" fill="#ff69b4" transform="rotate(-25 75 50)"/>
+                <ellipse cx="105" cy="50" rx="15" ry="12" fill="#ff69b4" transform="rotate(25 105 50)"/>
+                <circle cx="90" cy="52" r="6" fill="#ff1493"/>
+                <path d="M 65 55 L 60 65 L 62 66 L 68 58 Z" fill="#ff69b4"/>
+                <path d="M 115 55 L 120 65 L 118 66 L 112 58 Z" fill="#ff69b4"/>
+                
+                <!-- Left eye -->
+                <ellipse cx="80" cy="95" rx="10" ry="14" fill="white" stroke="#333" stroke-width="1.5"/>
+                <ellipse cx="80" cy="95" rx="8" ry="12" fill="#4da6ff"/>
+                <ellipse cx="80" cy="93" rx="5" ry="8" fill="#0066cc"/>
+                <circle cx="78" cy="90" r="2.5" fill="white" opacity="0.8"/>
+                
+                <!-- Right eye -->
+                <ellipse cx="120" cy="95" rx="10" ry="14" fill="white" stroke="#333" stroke-width="1.5"/>
+                <ellipse cx="120" cy="95" rx="8" ry="12" fill="#4da6ff"/>
+                <ellipse cx="120" cy="93" rx="5" ry="8" fill="#0066cc"/>
+                <circle cx="118" cy="90" r="2.5" fill="white" opacity="0.8"/>
+                
+                <!-- Nose -->
+                <path d="M 100 108 L 95 113 L 100 115 L 105 113 Z" fill="#ffb6c1"/>
+                
+                <!-- Mouth -->
+                <path d="M 100 115 Q 95 120 90 118" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M 100 115 Q 105 120 110 118" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                
+                <!-- Whiskers left -->
+                <line x1="65" y1="100" x2="40" y2="95" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="65" y1="105" x2="38" y2="105" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="65" y1="110" x2="40" y2="115" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+                
+                <!-- Whiskers right -->
+                <line x1="135" y1="100" x2="160" y2="95" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="135" y1="105" x2="162" y2="105" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="135" y1="110" x2="160" y2="115" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
+                
+                <!-- Cheek blush -->
+                <ellipse cx="70" cy="108" rx="8" ry="5" fill="#ffb6c1" opacity="0.4"/>
+                <ellipse cx="130" cy="108" rx="8" ry="5" fill="#ffb6c1" opacity="0.4"/>
+            </svg>
             <h1>ChatGPT Screen to Video Slideshow Maker</h1>
         </div>
 
         <div class="tabs">
             <button class="tab active" onclick="switchTab('manual')">📸 Manual Upload</button>
             <button class="tab" onclick="switchTab('autosplit')">✂️ Auto-Split Tool</button>
+        </div>
+
+        <!-- Manual Upload Tab -->
+        <div id="manualTab" class="tab-content active">
+            <div class="main-grid">
+                <div>
+                    <div class="card">
+                        <h2>Upload Images</h2>
+                        <label class="upload-area" for="imageUpload">
+                            <svg class="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                            <div>Click to upload screenshots</div>
+                        </label>
+                        <input type="file" id="imageUpload" multiple accept="image/*">
+                    </div>
+                    <div class="slides-list" id="slidesList"></div>
+                </div>
+                <div>
+                    <div class="card">
+                        <h2>Settings</h2>
+                        <div class="settings-group">
+                            <label>Default Duration (seconds)</label>
+                            <input type="number" id="defaultDuration" value="3" min="1" max="10">
+                        </div>
+                        <div class="settings-group">
+                            <label>Background Music (Entire Video)</label>
+                            <div style="display:flex;gap:8px">
+                                <label style="flex:1;background:#40414f;border:1px solid #565869;padding:12px;text-align:center;border-radius:6px;cursor:pointer;display:block">
+                                    <span id="musicLabel">🎵 Upload Music</span>
+                                    <input type="file" id="musicUpload" accept="audio/*" style="display:none">
+                                </label>
+                                <button onclick="showPresetMusic('manual')" style="padding:12px 16px;background:#10a37f;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600">🎼 Presets</button>
+                            </div>
+                            <div style="margin-top:8px;font-size:12px;color:#8e8ea0">
+                                🔗 Free music: 
+                                <a href="https://mixkit.co/free-stock-music/" target="_blank" style="color:#10a37f">Mixkit</a> | 
+                                <a href="https://www.bensound.com/royalty-free-music" target="_blank" style="color:#10a37f">Bensound</a> | 
+                                <a href="https://incompetech.com/music/royalty-free/music.html" target="_blank" style="color:#10a37f">Incompetech</a> | 
+                                <a href="https://www.youtube.com/audiolibrary" target="_blank" style="color:#10a37f">YouTube Library</a>
+                            </div>
+                            ${musicFile ? '<button onclick="removeMusic(\'manual\')" style="margin-top:8px;color:#ef4444;background:transparent;border:none;cursor:pointer;font-size:13px">✕ Remove Music</button>' : ''}
+                        </div>
+                        <button class="btn btn-primary" id="generateBtn">▶️ Generate Video</button>
+                    </div>
+                    <div class="card" id="previewSection" style="display: none;">
+                        <h2>Preview</h2>
+                        <video id="videoPreview" controls></video>
+                        <button class="btn btn-primary" id="downloadBtn">⬇️ Download Video</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="manualTab" class="tab-content active">
@@ -84,6 +185,13 @@
                         <div class="settings-group">
                             <label>Default Duration (seconds)</label>
                             <input type="number" id="defaultDuration" value="3" min="1" max="10">
+                        </div>
+                        <div class="settings-group">
+                            <label>Background Music (Entire Video)</label>
+                            <label style="background:#40414f;border:1px solid #565869;padding:12px;text-align:center;border-radius:6px;cursor:pointer;display:block">
+                                <span id="musicLabel">🎵 Upload Music</span>
+                                <input type="file" id="musicUpload" accept="audio/*" style="display:none">
+                            </label>
                         </div>
                         <button class="btn btn-primary" id="generateBtn">▶️ Generate Video</button>
                     </div>
@@ -112,9 +220,9 @@
                         <h2>Upload Screenshot to Split</h2>
                         <label class="upload-area" for="autoSplitUpload">
                             <svg class="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
-                            <div>Upload ChatGPT screenshot to split</div>
+                            <div>Upload multiple ChatGPT screenshots</div>
                         </label>
-                        <input type="file" id="autoSplitUpload" accept="image/*">
+                        <input type="file" id="autoSplitUpload" accept="image/*" multiple>
                         <div id="splitPreview" style="margin-top: 20px;"></div>
                     </div>
                     <div class="slides-list" id="groupsList"></div>
@@ -124,7 +232,25 @@
                         <h2>Split Settings</h2>
                         <div class="settings-group">
                             <label>Default Group Duration (seconds)</label>
-                            <input type="number" id="groupDuration" value="5" min="1" max="15">
+                            <input type="number" id="groupDuration" value="3" min="1" max="15">
+                        </div>
+                        <div class="settings-group">
+                            <label>Background Music (Entire Video)</label>
+                            <div style="display:flex;gap:8px">
+                                <label style="flex:1;background:#40414f;border:1px solid #565869;padding:12px;text-align:center;border-radius:6px;cursor:pointer;display:block">
+                                    <span id="groupMusicLabel">🎵 Upload Music</span>
+                                    <input type="file" id="groupMusicUpload" accept="audio/*" style="display:none">
+                                </label>
+                                <button onclick="showPresetMusic('group')" style="padding:12px 16px;background:#10a37f;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600">🎼 Presets</button>
+                            </div>
+                            <div style="margin-top:8px;font-size:12px;color:#8e8ea0">
+                                🔗 Free music: 
+                                <a href="https://mixkit.co/free-stock-music/" target="_blank" style="color:#10a37f">Mixkit</a> | 
+                                <a href="https://www.bensound.com/royalty-free-music" target="_blank" style="color:#10a37f">Bensound</a> | 
+                                <a href="https://incompetech.com/music/royalty-free/music.html" target="_blank" style="color:#10a37f">Incompetech</a> | 
+                                <a href="https://www.youtube.com/audiolibrary" target="_blank" style="color:#10a37f">YouTube Library</a>
+                            </div>
+                            ${groupMusicFile ? '<button onclick="removeMusic(\'group\')" style="margin-top:8px;color:#ef4444;background:transparent;border:none;cursor:pointer;font-size:13px">✕ Remove Music</button>' : ''}
                         </div>
                         <button class="btn btn-primary" id="generateFromGroupsBtn" style="display: none;">▶️ Generate Video</button>
                     </div>
@@ -160,11 +286,22 @@
             Array.from(e.target.files).forEach(file => {
                 const reader = new FileReader();
                 reader.onload = (event) => {
-                    slides.push({ id: Date.now() + Math.random(), image: event.target.result, text: '', duration: parseFloat(document.getElementById('defaultDuration').value) });
+                    slides.push({ id: Date.now() + Math.random(), image: event.target.result, text: '', duration: parseFloat(document.getElementById('defaultDuration').value), sound: null });
                     renderSlides();
                 };
                 reader.readAsDataURL(file);
             });
+        });
+
+        document.getElementById('musicUpload').addEventListener('change', (e) => {
+            if (e.target.files[0]) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    musicFile = event.target.result;
+                    document.getElementById('musicLabel').textContent = '✓ Music Added';
+                };
+                reader.readAsDataURL(e.target.files[0]);
+            }
         });
 
         function renderSlides() {
@@ -184,6 +321,19 @@
                         <div><span style="color:white;font-size:14px">Duration:</span>
                         <input type="number" class="duration-input" value="${slide.duration}" min="1" max="10" onchange="slides[${i}].duration=parseFloat(this.value)">
                         <span style="color:white;font-size:14px">seconds</span></div>
+                        <div style="margin-top:8px">
+                            <label style="color:white;font-size:13px;cursor:pointer;padding:6px 12px;background:#565869;border-radius:4px;display:inline-block">
+                                ${slide.sound ? '🔊 Sound Added' : '🔇 Add Sound'}
+                                <input type="file" accept="audio/*" onchange="addSlideSound(${i}, this.files[0])" style="display:none">
+                            </label>
+                            ${slide.sound ? `<button onclick="removeSlideSound(${i})" style="margin-left:8px;color:#ef4444;background:transparent;border:none;cursor:pointer;font-size:14px">✕</button>` : ''}
+                            <button onclick="showPresetSounds(${i}, 'slide')" style="margin-left:8px;padding:6px 12px;background:#40414f;color:white;border:none;border-radius:4px;cursor:pointer;font-size:13px">🎵 Presets</button>
+                            <div style="margin-top:6px;font-size:11px;color:#8e8ea0">
+                                🔗 Free sounds: <a href="https://mixkit.co/free-sound-effects/" target="_blank" style="color:#10a37f">Mixkit</a> | 
+                                <a href="https://freesound.org/" target="_blank" style="color:#10a37f">Freesound</a> | 
+                                <a href="https://www.zapsplat.com/" target="_blank" style="color:#10a37f">Zapsplat</a>
+                            </div>
+                        </div>
                     </div>
                     <button class="btn btn-delete" onclick="deleteSlide(${i})">🗑️</button>
                 `;
@@ -200,6 +350,146 @@
         }
 
         function deleteSlide(i) { slides.splice(i, 1); renderSlides(); }
+
+        function addSlideSound(index, file) {
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                slides[index].sound = e.target.result;
+                renderSlides();
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function removeSlideSound(index) {
+            slides[index].sound = null;
+            renderSlides();
+        }
+
+        function showPresetSounds(index, type) {
+            const modal = document.createElement('div');
+            modal.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:10000';
+            
+            let soundsHtml = '<div style="background:#444654;padding:24px;border-radius:12px;max-width:400px;width:90%">';
+            soundsHtml += '<h3 style="color:white;margin:0 0 16px 0;font-size:18px">Choose Preset Sound</h3>';
+            soundsHtml += '<div style="display:grid;gap:8px">';
+            
+            Object.keys(presetSounds).forEach(key => {
+                const sound = presetSounds[key];
+                soundsHtml += `
+                    <button onclick="selectPresetSound('${key}', ${index}, '${type}')" 
+                            style="padding:12px;background:#565869;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;text-align:left;transition:all 0.2s"
+                            onmouseover="this.style.background='#10a37f'" 
+                            onmouseout="this.style.background='#565869'">
+                        ${sound.name}
+                    </button>
+                `;
+            });
+            
+            soundsHtml += '</div>';
+            soundsHtml += '<button onclick="this.parentElement.parentElement.remove()" style="margin-top:16px;width:100%;padding:10px;background:#ef4444;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px">Cancel</button>';
+            soundsHtml += '</div>';
+            
+            modal.innerHTML = soundsHtml;
+            document.body.appendChild(modal);
+        }
+
+        async function selectPresetSound(key, index, type) {
+            const sound = presetSounds[key];
+            
+            // Fetch the sound and convert to base64
+            try {
+                const response = await fetch(sound.url);
+                const blob = await response.blob();
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    if (type === 'slide') {
+                        slides[index].sound = e.target.result;
+                        renderSlides();
+                    } else if (type === 'group') {
+                        groups[index].sound = e.target.result;
+                        renderGroups();
+                    }
+                };
+                reader.readAsDataURL(blob);
+            } catch (error) {
+                alert('Failed to load preset sound. Please try uploading your own.');
+            }
+            
+            // Close modal
+            document.querySelectorAll('[style*="position:fixed"]').forEach(el => {
+                if (el.style.background.includes('rgba(0,0,0,0.8)')) el.remove();
+            });
+        }
+
+        function showPresetMusic(type) {
+            const modal = document.createElement('div');
+            modal.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:10000';
+            
+            let musicHtml = '<div style="background:#444654;padding:24px;border-radius:12px;max-width:500px;width:90%">';
+            musicHtml += '<h3 style="color:white;margin:0 0 16px 0;font-size:18px">Choose Background Music</h3>';
+            musicHtml += '<div style="display:grid;gap:8px">';
+            
+            Object.keys(presetMusic).forEach(key => {
+                const music = presetMusic[key];
+                musicHtml += `
+                    <button onclick="selectPresetMusic('${key}', '${type}')" 
+                            style="padding:12px;background:#565869;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;text-align:left;transition:all 0.2s"
+                            onmouseover="this.style.background='#10a37f'" 
+                            onmouseout="this.style.background='#565869'">
+                        ${music.name}
+                    </button>
+                `;
+            });
+            
+            musicHtml += '</div>';
+            musicHtml += '<button onclick="this.parentElement.parentElement.remove()" style="margin-top:16px;width:100%;padding:10px;background:#ef4444;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px">Cancel</button>';
+            musicHtml += '</div>';
+            
+            modal.innerHTML = musicHtml;
+            document.body.appendChild(modal);
+        }
+
+        async function selectPresetMusic(key, type) {
+            const music = presetMusic[key];
+            
+            try {
+                const response = await fetch(music.url);
+                const blob = await response.blob();
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    if (type === 'manual') {
+                        musicFile = e.target.result;
+                        document.getElementById('musicLabel').textContent = '✓ ' + music.name.split(' ')[0] + ' Music';
+                        renderSlides();
+                    } else if (type === 'group') {
+                        groupMusicFile = e.target.result;
+                        document.getElementById('groupMusicLabel').textContent = '✓ ' + music.name.split(' ')[0] + ' Music';
+                        renderGroups();
+                    }
+                };
+                reader.readAsDataURL(blob);
+            } catch (error) {
+                alert('Failed to load preset music. Please try uploading your own.');
+            }
+            
+            // Close modal
+            document.querySelectorAll('[style*="position:fixed"]').forEach(el => {
+                if (el.style.background.includes('rgba(0,0,0,0.8)')) el.remove();
+            });
+        }
+
+        function removeMusic(type) {
+            if (type === 'manual') {
+                musicFile = null;
+                document.getElementById('musicLabel').textContent = '🎵 Upload Music';
+                renderSlides();
+            } else if (type === 'group') {
+                groupMusicFile = null;
+                document.getElementById('groupMusicLabel').textContent = '🎵 Upload Music';
+                renderGroups();
+            }
+        }
 
         document.getElementById('generateBtn').addEventListener('click', async () => {
             if (!slides.length) return alert('Add at least one slide');
@@ -340,106 +630,360 @@
         });
 
         // Auto-Split functionality
+        let uploadedScreenshots = [];
+        let currentScreenshotIndex = 0;
+        let blockedRanges = []; // Store blocked sections
+
         document.getElementById('autoSplitUpload').addEventListener('change', (e) => {
-            if (!e.target.files[0]) return;
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                currentSplitImage = event.target.result;
-                splitMarks = [];
-                const preview = document.getElementById('splitPreview');
-                preview.innerHTML = `
-                    <div style="position:relative;cursor:crosshair" id="splitImageContainer">
-                        <img src="${currentSplitImage}" style="width:100%;border-radius:8px;border:2px solid #565869;display:block;pointer-events:none">
-                    </div>
-                    <div style="margin-top:12px;color:#8e8ea0;font-size:13px">👆 Click on the image where you want to split. You can add multiple split points!</div>
-                `;
-                setTimeout(() => {
-                    document.getElementById('splitImageContainer').addEventListener('click', markSplit);
-                }, 100);
-            };
-            reader.readAsDataURL(e.target.files[0]);
+            const files = Array.from(e.target.files);
+            if (!files.length) return;
+            
+            uploadedScreenshots = [];
+            let loaded = 0;
+            
+            files.forEach((file, idx) => {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    uploadedScreenshots.push({
+                        id: idx,
+                        image: event.target.result,
+                        splits: [],
+                        blocked: [] // Store blocked ranges for this screenshot
+                    });
+                    loaded++;
+                    
+                    if (loaded === files.length) {
+                        currentScreenshotIndex = 0;
+                        showScreenshotToSplit();
+                    }
+                };
+                reader.readAsDataURL(file);
+            });
         });
 
-        function markSplit(e) {
-            const rect = e.target.getBoundingClientRect();
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-            splitMarks.push(y);
-            splitMarks.sort((a, b) => a - b);
-            updateSplitMarkers();
-        }
-
-        function updateSplitMarkers() {
-            let html = `<div style="position:relative;cursor:crosshair" id="splitImageContainer">`;
-            html += `<img src="${currentSplitImage}" style="width:100%;border-radius:8px;display:block;pointer-events:none">`;
-            splitMarks.forEach((y, idx) => {
-                html += `<div style="position:absolute;top:${y}%;left:0;right:0;height:3px;background:#10a37f;box-shadow:0 0 5px #10a37f"></div>`;
-                html += `<div style="position:absolute;top:${y}%;right:10px;background:#10a37f;color:white;padding:2px 8px;border-radius:4px;font-size:11px;transform:translateY(-50%)">Split ${idx + 1}</div>`;
-            });
-            html += `</div>`;
-            html += `<div style="margin-top:12px;color:#10a37f;font-size:14px;font-weight:600">${splitMarks.length} split mark(s) placed - Click image to add more</div>`;
-            html += `<button class="btn btn-primary" onclick="doneSplitting()" style="margin-top:12px">✂️ Create ${splitMarks.length + 1} Sections</button>`;
-            html += `<button class="btn btn-primary" onclick="clearMarks()" style="margin-top:12px;background:#565869">Clear All Marks</button>`;
-            document.getElementById('splitPreview').innerHTML = html;
+        function showScreenshotToSplit() {
+            console.log(`showScreenshotToSplit: index=${currentScreenshotIndex}, total=${uploadedScreenshots.length}`);
             
-            setTimeout(() => {
-                document.getElementById('splitImageContainer').addEventListener('click', markSplit);
-            }, 100);
-        }
-
-        function clearMarks() {
-            splitMarks = [];
+            if (currentScreenshotIndex >= uploadedScreenshots.length) {
+                finishAllSplitting();
+                return;
+            }
+            
+            const screenshot = uploadedScreenshots[currentScreenshotIndex];
+            currentSplitImage = screenshot.image;
+            splitMarks = [...screenshot.splits];
+            blockedRanges = [...(screenshot.blocked || [])];
+            
             const preview = document.getElementById('splitPreview');
-            preview.innerHTML = `
-                <div style="position:relative;cursor:crosshair" id="splitImageContainer">
-                    <img src="${currentSplitImage}" style="width:100%;border-radius:8px;border:2px solid #565869;display:block;pointer-events:none">
+            
+            // Build thumbnail gallery
+            let galleryHtml = '<div style="display:flex;gap:8px;overflow-x:auto;padding:12px;background:#343541;border-radius:8px;margin-bottom:16px">';
+            uploadedScreenshots.forEach((ss, idx) => {
+                const isActive = idx === currentScreenshotIndex;
+                const hasSplits = ss.splits.length > 0;
+                const hasBlocks = (ss.blocked || []).length > 0;
+                galleryHtml += `
+                    <div onclick="jumpToScreenshot(${idx})" style="cursor:pointer;min-width:80px;position:relative;border:3px solid ${isActive ? '#10a37f' : '#565869'};border-radius:6px;overflow:hidden;transition:all 0.2s">
+                        <img src="${ss.image}" style="width:80px;height:60px;object-fit:cover;display:block">
+                        <div style="position:absolute;top:2px;right:2px;background:${isActive ? '#10a37f' : '#565869'};color:white;padding:2px 6px;border-radius:3px;font-size:10px;font-weight:600">${idx + 1}</div>
+                        ${hasSplits ? '<div style="position:absolute;bottom:2px;left:2px;background:#10a37f;color:white;padding:1px 4px;border-radius:2px;font-size:9px">✂️' + ss.splits.length + '</div>' : ''}
+                        ${hasBlocks ? '<div style="position:absolute;bottom:2px;right:2px;background:#ef4444;color:white;padding:1px 4px;border-radius:2px;font-size:9px">🚫' + ss.blocked.length + '</div>' : ''}
+                    </div>
+                `;
+            });
+            galleryHtml += '</div>';
+            
+            preview.innerHTML = galleryHtml + `
+                <div style="background:#444654;padding:16px;border-radius:8px;margin-bottom:16px">
+                    <div style="color:#10a37f;font-weight:600;font-size:16px">Screenshot ${currentScreenshotIndex + 1} of ${uploadedScreenshots.length}</div>
+                    <div style="color:#8e8ea0;font-size:13px;margin-top:4px">
+                        ${splitMarks.length} split(s) | ${blockedRanges.length} blocked section(s)<br>
+                        <span style="color:#10a37f">●</span> Click to split | 
+                        <span style="color:#10a37f">●</span> Shift+Click to remove | 
+                        <span style="color:#ef4444">●</span> Ctrl+Click twice to block section
+                    </div>
                 </div>
-                <div style="margin-top:12px;color:#8e8ea0;font-size:13px">Click on the image where you want to split. You can add multiple split points.</div>
-                <button class="btn btn-primary" onclick="doneSplitting()" style="margin-top:12px;display:none">Done Splitting</button>
-                <button class="btn btn-primary" onclick="clearMarks()" style="margin-top:12px;background:#565869;display:none">Clear Marks</button>
+                <div style="position:relative;cursor:crosshair" id="splitImageContainer">
+                    <img src="${currentSplitImage}" style="width:100%;border-radius:8px;border:2px solid #565869;display:block">
+                </div>
+                <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+                    <button class="btn btn-primary" onclick="nextScreenshot()" style="flex:1;min-width:150px">${currentScreenshotIndex === uploadedScreenshots.length - 1 ? '✅ Finish & Create Sections' : '➡️ Next Screenshot'}</button>
+                    ${currentScreenshotIndex > 0 ? '<button class="btn btn-primary" onclick="prevScreenshot()" style="flex:1;min-width:120px;background:#565869">⬅️ Previous</button>' : ''}
+                    <button class="btn btn-primary" onclick="clearMarks()" style="background:#565869;min-width:100px">Clear All</button>
+                </div>
             `;
+            
             setTimeout(() => {
-                document.getElementById('splitImageContainer').addEventListener('click', markSplit);
-            }, 100);
+                const container = document.getElementById('splitImageContainer');
+                if (container) {
+                    container.addEventListener('click', markSplit);
+                    renderMarkers(container);
+                }
+            }, 50);
         }
 
-        async function doneSplitting() {
-            if (!splitMarks.length) return alert('Please add at least one split mark');
+        function jumpToScreenshot(index) {
+            // Save current work
+            if (currentScreenshotIndex < uploadedScreenshots.length) {
+                uploadedScreenshots[currentScreenshotIndex].splits = [...splitMarks];
+                uploadedScreenshots[currentScreenshotIndex].blocked = [...blockedRanges];
+            }
             
+            currentScreenshotIndex = index;
+            blockStartY = null;
+            showScreenshotToSplit();
+        }
+
+        function addMoreScreenshots() {
+            document.getElementById('autoSplitUpload').click();
+        }
+
+        function nextScreenshot() {
+            uploadedScreenshots[currentScreenshotIndex].splits = [...splitMarks];
+            uploadedScreenshots[currentScreenshotIndex].blocked = [...blockedRanges];
+            currentScreenshotIndex++;
+            blockStartY = null;
+            showScreenshotToSplit();
+        }
+
+        function prevScreenshot() {
+            uploadedScreenshots[currentScreenshotIndex].splits = [...splitMarks];
+            uploadedScreenshots[currentScreenshotIndex].blocked = [...blockedRanges];
+            currentScreenshotIndex--;
+            blockStartY = null;
+            showScreenshotToSplit();
+        }
+
+        function finishAllSplitting() {
+            document.getElementById('splitPreview').innerHTML = `
+                <div style="background:#444654;padding:20px;border-radius:8px;text-align:center">
+                    <div style="color:#10a37f;font-size:18px;font-weight:600;margin-bottom:8px">✅ All Screenshots Processed!</div>
+                    <div style="color:#8e8ea0;font-size:14px">Creating sections from all splits...</div>
+                </div>
+            `;
+            
+            setTimeout(() => processAllSplits(), 500);
+        }
+
+        async function processAllSplits() {
             groups = [];
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const img = new Image();
             
-            await new Promise(resolve => {
-                img.onload = resolve;
-                img.src = currentSplitImage;
-            });
-            
-            canvas.width = img.width;
-            canvas.height = img.height;
-            
-            const positions = [0, ...splitMarks.map(y => (y / 100) * img.height), img.height];
-            
-            for (let i = 0; i < positions.length - 1; i++) {
-                const y1 = positions[i];
-                const y2 = positions[i + 1];
-                const h = y2 - y1;
+            for (const screenshot of uploadedScreenshots) {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const img = new Image();
                 
-                const cropCanvas = document.createElement('canvas');
-                cropCanvas.width = img.width;
-                cropCanvas.height = h;
-                const cropCtx = cropCanvas.getContext('2d');
-                cropCtx.drawImage(img, 0, y1, img.width, h, 0, 0, img.width, h);
-                
-                groups.push({
-                    id: Date.now() + Math.random(),
-                    image: cropCanvas.toDataURL(),
-                    duration: parseFloat(document.getElementById('groupDuration').value)
+                await new Promise(resolve => {
+                    img.onload = resolve;
+                    img.src = screenshot.image;
                 });
+                
+                canvas.width = img.width;
+                canvas.height = img.height;
+                
+                const positions = [0, ...screenshot.splits.map(y => (y / 100) * img.height), img.height];
+                const blocked = screenshot.blocked || [];
+                
+                for (let i = 0; i < positions.length - 1; i++) {
+                    const y1 = positions[i];
+                    const y2 = positions[i + 1];
+                    const h = y2 - y1;
+                    
+                    if (h < 10) continue;
+                    
+                    // Check if this section is blocked
+                    const sectionStartPercent = (y1 / img.height) * 100;
+                    const sectionEndPercent = (y2 / img.height) * 100;
+                    
+                    let isBlocked = false;
+                    for (const block of blocked) {
+                        // Check if section overlaps with blocked range
+                        if (!(sectionEndPercent <= block.start || sectionStartPercent >= block.end)) {
+                            isBlocked = true;
+                            break;
+                        }
+                    }
+                    
+                    if (isBlocked) continue; // Skip blocked sections
+                    
+                    const cropCanvas = document.createElement('canvas');
+                    cropCanvas.width = img.width;
+                    cropCanvas.height = h;
+                    const cropCtx = cropCanvas.getContext('2d');
+                    cropCtx.drawImage(img, 0, y1, img.width, h, 0, 0, img.width, h);
+                    
+                    groups.push({
+                        id: Date.now() + Math.random(),
+                        image: cropCanvas.toDataURL(),
+                        duration: parseFloat(document.getElementById('groupDuration').value),
+                        source: `Screenshot ${screenshot.id + 1}, Section ${i + 1}`,
+                        text: '',
+                        textPosition: 'bottom',
+                        sound: null
+                    });
+                }
             }
             
             renderGroups();
             document.getElementById('generateFromGroupsBtn').style.display = 'block';
+            
+            document.getElementById('splitPreview').innerHTML = `
+                <div style="background:#10a37f;padding:20px;border-radius:8px;text-align:center">
+                    <div style="color:white;font-size:18px;font-weight:600;margin-bottom:8px">🎉 ${groups.length} Sections Created!</div>
+                    <div style="color:white;font-size:14px">Blocked sections excluded. Scroll down to review and generate your video.</div>
+                </div>
+            `;
+        }
+
+        let blockStartY = null; // Track first Ctrl+Click for blocking
+
+        function markSplit(e) {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const clickY = ((e.clientY - rect.top) / rect.height) * 100;
+            
+            // Ctrl+Click - Block section (requires two clicks to define range)
+            if (e.ctrlKey || e.metaKey) {
+                if (blockStartY === null) {
+                    // First click - start of blocked range
+                    blockStartY = clickY;
+                    const container = e.currentTarget;
+                    renderMarkers(container, clickY);
+                    
+                    // Update status
+                    const statusText = document.getElementById('splitPreview').querySelector('[style*="color:#8e8ea0"]');
+                    if (statusText) {
+                        const lines = statusText.innerHTML.split('<br>');
+                        lines[0] = `${splitMarks.length} split(s) | ${blockedRanges.length} blocked section(s) | <span style="color:#ef4444">Click end point...</span>`;
+                        statusText.innerHTML = lines.join('<br>');
+                    }
+                } else {
+                    // Second click - end of blocked range
+                    const blockEndY = clickY;
+                    const start = Math.min(blockStartY, blockEndY);
+                    const end = Math.max(blockStartY, blockEndY);
+                    
+                    blockedRanges.push({ start, end });
+                    uploadedScreenshots[currentScreenshotIndex].blocked = [...blockedRanges];
+                    blockStartY = null;
+                    
+                    const container = e.currentTarget;
+                    renderMarkers(container);
+                }
+                return;
+            }
+            
+            // Shift+Click - Remove nearest split mark
+            if (e.shiftKey) {
+                if (splitMarks.length === 0) return;
+                
+                let closestIndex = 0;
+                let closestDistance = Math.abs(splitMarks[0] - clickY);
+                
+                for (let i = 1; i < splitMarks.length; i++) {
+                    const distance = Math.abs(splitMarks[i] - clickY);
+                    if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestIndex = i;
+                    }
+                }
+                
+                if (closestDistance < 5) {
+                    splitMarks.splice(closestIndex, 1);
+                    uploadedScreenshots[currentScreenshotIndex].splits = [...splitMarks];
+                }
+            } else {
+                // Normal click - Add split mark
+                splitMarks.push(clickY);
+                splitMarks.sort((a, b) => a - b);
+                uploadedScreenshots[currentScreenshotIndex].splits = [...splitMarks];
+            }
+            
+            const container = e.currentTarget;
+            renderMarkers(container);
+        }
+
+        function renderMarkers(container, tempBlockStart = null) {
+            let html = `<img src="${currentSplitImage}" style="width:100%;border-radius:8px;border:2px solid #565869;display:block">`;
+            
+            // Draw blocked sections (red overlay)
+            blockedRanges.forEach((range, idx) => {
+                const height = range.end - range.start;
+                html += `<div style="position:absolute;top:${range.start}%;left:0;right:0;height:${height}%;background:rgba(239,68,68,0.3);border-top:6px solid #ef4444;border-bottom:6px solid #ef4444;pointer-events:none"></div>`;
+                html += `<div style="position:absolute;top:${range.start + height/2}%;left:50%;transform:translate(-50%,-50%);background:#ef4444;color:white;padding:4px 12px;border-radius:4px;font-size:12px;font-weight:600;pointer-events:none">BLOCKED ${idx + 1}</div>`;
+            });
+            
+            // Draw temp block start line
+            if (tempBlockStart !== null) {
+                html += `<div style="position:absolute;top:${tempBlockStart}%;left:0;right:0;height:6px;background:#ef4444;pointer-events:none"></div>`;
+                html += `<div style="position:absolute;top:${tempBlockStart}%;right:10px;background:#ef4444;color:white;padding:2px 8px;border-radius:4px;font-size:11px;transform:translateY(-50%);pointer-events:none">Block Start</div>`;
+            }
+            
+            // Draw split marks (green lines)
+            splitMarks.forEach((mark, idx) => {
+                html += `<div style="position:absolute;top:${mark}%;left:0;right:0;height:3px;background:#10a37f;box-shadow:0 0 5px #10a37f;pointer-events:none"></div>`;
+                html += `<div style="position:absolute;top:${mark}%;right:10px;background:#10a37f;color:white;padding:2px 8px;border-radius:4px;font-size:11px;transform:translateY(-50%);pointer-events:none">Split ${idx + 1}</div>`;
+            });
+            
+            container.innerHTML = html;
+            
+            // Update counter
+            const statusText = document.getElementById('splitPreview').querySelector('[style*="color:#8e8ea0"]');
+            if (statusText && tempBlockStart === null) {
+                const lines = statusText.innerHTML.split('<br>');
+                lines[0] = `${splitMarks.length} split(s) | ${blockedRanges.length} blocked section(s)`;
+                statusText.innerHTML = lines.join('<br>');
+            }
+        }
+
+        function updateSplitMarkers() {
+            const container = document.getElementById('splitImageContainer');
+            if (!container) return;
+            
+            let html = `<div style="position:relative;cursor:crosshair" id="splitImageClickArea">`;
+            html += `<img src="${currentSplitImage}" style="width:100%;border-radius:8px;display:block;pointer-events:none">`;
+            splitMarks.forEach((y, idx) => {
+                html += `<div style="position:absolute;top:${y}%;left:0;right:0;height:3px;background:#10a37f;box-shadow:0 0 5px #10a37f;pointer-events:none"></div>`;
+                html += `<div style="position:absolute;top:${y}%;right:10px;background:#10a37f;color:white;padding:2px 8px;border-radius:4px;font-size:11px;transform:translateY(-50%);pointer-events:none">Split ${idx + 1}</div>`;
+            });
+            html += `</div>`;
+            
+            const preview = document.getElementById('splitPreview');
+            const statusHtml = `
+                <div style="background:#444654;padding:16px;border-radius:8px;margin-bottom:16px">
+                    <div style="color:#10a37f;font-weight:600;font-size:16px">Screenshot ${currentScreenshotIndex + 1} of ${uploadedScreenshots.length}</div>
+                    <div style="color:#8e8ea0;font-size:13px;margin-top:4px">${splitMarks.length} split mark(s) - Click to add more</div>
+                </div>
+            `;
+            
+            const buttonsHtml = `
+                <div style="display:flex;gap:8px;margin-top:12px">
+                    <button class="btn btn-primary" onclick="nextScreenshot()" style="flex:1">${currentScreenshotIndex === uploadedScreenshots.length - 1 ? '✅ Finish & Create Sections' : '➡️ Next Screenshot'}</button>
+                    ${currentScreenshotIndex > 0 ? '<button class="btn btn-primary" onclick="prevScreenshot()" style="flex:1;background:#565869">⬅️ Previous</button>' : ''}
+                    <button class="btn btn-primary" onclick="clearMarks()" style="background:#565869">Clear Marks</button>
+                </div>
+            `;
+            
+            preview.innerHTML = statusHtml + html + buttonsHtml;
+            
+            setTimeout(() => {
+                const clickArea = document.getElementById('splitImageClickArea');
+                if (clickArea) {
+                    clickArea.addEventListener('click', markSplit);
+                }
+            }, 50);
+        }
+
+        function clearMarks() {
+            splitMarks = [];
+            blockedRanges = [];
+            blockStartY = null;
+            uploadedScreenshots[currentScreenshotIndex].splits = [];
+            uploadedScreenshots[currentScreenshotIndex].blocked = [];
+            showScreenshotToSplit();
+        }
+
+        async function doneSplitting() {
+            // This function is no longer used, kept for compatibility
         }
 
         function renderGroups() {
@@ -450,7 +994,10 @@
                 div.className = 'group-container';
                 div.innerHTML = `
                     <div class="group-header">
-                        <div class="group-title">Section ${i + 1}</div>
+                        <div>
+                            <div class="group-title">Section ${i + 1}</div>
+                            ${g.source ? `<div style="color:#8e8ea0;font-size:12px;margin-top:4px">${g.source}</div>` : ''}
+                        </div>
                         <div class="controls">
                             <button class="move-btn" onclick="moveGroup(${i}, -1)" ${i === 0 ? 'disabled' : ''}>▲</button>
                             <button class="move-btn" onclick="moveGroup(${i}, 1)" ${i === groups.length - 1 ? 'disabled' : ''}>▼</button>
@@ -458,6 +1005,32 @@
                         </div>
                     </div>
                     <div class="group-images"><img src="${g.image}" class="group-image"></div>
+                    <div style="margin-bottom:8px">
+                        <input type="text" placeholder="Add text overlay (optional)..." value="${g.text || ''}" 
+                               onchange="groups[${i}].text=this.value" style="margin-bottom:8px">
+                        <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+                            <span style="color:white;font-size:14px">Position:</span>
+                            <select onchange="groups[${i}].textPosition=this.value" 
+                                    style="flex:1;padding:8px;background:#40414f;color:white;border:1px solid #565869;border-radius:6px;font-size:14px">
+                                <option value="top" ${g.textPosition === 'top' ? 'selected' : ''}>Top</option>
+                                <option value="center" ${g.textPosition === 'center' ? 'selected' : ''}>Center</option>
+                                <option value="bottom" ${g.textPosition === 'bottom' ? 'selected' : ''}>Bottom</option>
+                            </select>
+                        </div>
+                        <div style="margin-top:8px">
+                            <label style="color:white;font-size:13px;cursor:pointer;padding:6px 12px;background:#565869;border-radius:4px;display:inline-block">
+                                ${g.sound ? '🔊 Sound Added' : '🔇 Add Sound'}
+                                <input type="file" accept="audio/*" onchange="addGroupSound(${i}, this.files[0])" style="display:none">
+                            </label>
+                            ${g.sound ? `<button onclick="removeGroupSound(${i})" style="margin-left:8px;color:#ef4444;background:transparent;border:none;cursor:pointer;font-size:14px">✕</button>` : ''}
+                            <button onclick="showPresetSounds(${i}, 'group')" style="margin-left:8px;padding:6px 12px;background:#40414f;color:white;border:none;border-radius:4px;cursor:pointer;font-size:13px">🎵 Presets</button>
+                            <div style="margin-top:6px;font-size:11px;color:#8e8ea0">
+                                🔗 Free sounds: <a href="https://mixkit.co/free-sound-effects/" target="_blank" style="color:#10a37f">Mixkit</a> | 
+                                <a href="https://freesound.org/" target="_blank" style="color:#10a37f">Freesound</a> | 
+                                <a href="https://www.zapsplat.com/" target="_blank" style="color:#10a37f">Zapsplat</a>
+                            </div>
+                        </div>
+                    </div>
                     <div><span style="color:white;font-size:14px">Duration:</span>
                     <input type="number" class="duration-input" value="${g.duration}" min="1" max="15" onchange="groups[${i}].duration=parseFloat(this.value)">
                     <span style="color:white;font-size:14px">seconds</span></div>
@@ -475,6 +1048,21 @@
         }
 
         function deleteGroup(i) { groups.splice(i, 1); renderGroups(); }
+
+        function addGroupSound(index, file) {
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                groups[index].sound = e.target.result;
+                renderGroups();
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function removeGroupSound(index) {
+            groups[index].sound = null;
+            renderGroups();
+        }
 
         document.getElementById('generateFromGroupsBtn').addEventListener('click', async () => {
             if (!groups.length) return alert('No groups to generate');
@@ -548,6 +1136,36 @@
                     ctx.fillStyle = '#000000';
                     ctx.fillRect(0, 0, canvas.width, canvas.height);
                     ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
+                    
+                    // Draw text overlay with shadow if text exists
+                    if (group.text) {
+                        const fontSize = 32;
+                        ctx.font = `bold ${fontSize}px Arial`;
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        
+                        // Calculate text position
+                        let textY;
+                        if (group.textPosition === 'top') {
+                            textY = 80;
+                        } else if (group.textPosition === 'center') {
+                            textY = canvas.height / 2;
+                        } else { // bottom
+                            textY = canvas.height - 80;
+                        }
+                        
+                        // Draw black shadow (offset slightly)
+                        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+                        ctx.fillText(group.text, canvas.width / 2 + 2, textY + 2);
+                        ctx.fillText(group.text, canvas.width / 2 - 2, textY - 2);
+                        ctx.fillText(group.text, canvas.width / 2 + 2, textY - 2);
+                        ctx.fillText(group.text, canvas.width / 2 - 2, textY + 2);
+                        
+                        // Draw white text on top
+                        ctx.fillStyle = '#ffffff';
+                        ctx.fillText(group.text, canvas.width / 2, textY);
+                    }
+                    
                     await new Promise(resolve => setTimeout(resolve, 33));
                 }
             }
@@ -561,6 +1179,17 @@
             a.href = document.getElementById('videoPreview2').src;
             a.download = 'split-slideshow.webm';
             a.click();
+        });
+
+        document.getElementById('groupMusicUpload').addEventListener('change', (e) => {
+            if (e.target.files[0]) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    groupMusicFile = event.target.result;
+                    document.getElementById('groupMusicLabel').textContent = '✓ Music Added';
+                };
+                reader.readAsDataURL(e.target.files[0]);
+            }
         });
     </script>
 </body>
